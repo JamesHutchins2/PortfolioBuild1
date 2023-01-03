@@ -1,7 +1,7 @@
 //import 
 import React from 'react';
 import './sec.css';
-import {useState} from 'react';
+
 import Navbar from '../navbar/navbar';
 import diagram from '../../assets/sec.png';
 const SEC =  () => {

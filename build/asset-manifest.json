@@ -1,13 +1,17 @@
 {
-  "main.css": "/static/css/main.7d2dc78b.chunk.css",
-  "main.js": "/static/js/main.e1260bd4.chunk.js",
-  "main.js.map": "/static/js/main.e1260bd4.chunk.js.map",
-  "static/js/1.0e87d8b2.chunk.js": "/static/js/1.0e87d8b2.chunk.js",
-  "static/js/1.0e87d8b2.chunk.js.map": "/static/js/1.0e87d8b2.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.7d2dc78b.chunk.css.map": "/static/css/main.7d2dc78b.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.5d807c6d045053b8decabd4723cf4e2c.js": "/precache-manifest.5d807c6d045053b8decabd4723cf4e2c.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.e27975dc.css",
+    "main.js": "/static/js/main.b3d827d0.js",
+    "static/media/head.jpeg": "/static/media/head.fb484450d14fbb92825e.jpeg",
+    "static/media/resume.pdf": "/static/media/resume.ed3e7fe0e56bb28f32a4.pdf",
+    "static/media/sec.png": "/static/media/sec.123c8edb18f18d8e74f7.png",
+    "static/media/Logo_western.png": "/static/media/Logo_western.00b2fab971c9ea878265.png",
+    "index.html": "/index.html",
+    "main.e27975dc.css.map": "/static/css/main.e27975dc.css.map",
+    "main.b3d827d0.js.map": "/static/js/main.b3d827d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e27975dc.css",
+    "static/js/main.b3d827d0.js"
+  ]
 }
