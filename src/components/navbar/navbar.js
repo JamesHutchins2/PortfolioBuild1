@@ -1,44 +1,119 @@
-import React from 'react'
-import "./navbar.css"
-import { useState } from "react"
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import './navbar.css';
+// Components
+import About from '../about/About'
+import Contact from '../contact/Contact'
+import ProjectMain from '../Projects/ProjectMain';
 
 
-export default function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    //
-    <nav className="navigation">
-      <a href="/" className="brand-name">
-       James Hutchins
-      </a>
-      <button
-        className="hamburger"
-        //manage theburger click to expand the nav menu
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded)
-        }}
-      >
-        {/* hamburger svg code... */}
-      </button>
-      <div
-      //displays the nav menu if the burger is clicked
-        className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-        }
-      >
-        <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
+    this.state = {
+      isMenuOpen: false, // keep track of whether the dropdown menu is open or not
+    };
+
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    // toggle the value of isMenuOpen
+    this.setState((state) => ({ isMenuOpen: !state.isMenuOpen }));
+  }
+
+  render() {
+    const { isMenuOpen } = this.state;
+
+    return (
+      <nav className="navbar">
+        {window.innerWidth < 600 ? (
+            <>
+              <button className= "Toggle"onClick={this.toggleMenu}>Menu</button>
+              {isMenuOpen && (
+              <div className='SmallBar'>
+               
+
+                <ul className="nav-menu">
+                  <li>
+                  <a href="/" className="nav-links">Home</a>
+                  </li>
+                  <li>
+                  <a href="/project" className="nav-links">Projects</a>
+                  </li>
+                  
+                  <li>
+                  <a href="/StockApi" className="nav-links">API example</a>
+                  </li>
+                  
+                </ul> </div>
+        )}
+            </>
+          ) : (
+            // If the screen width is 800px or above, show the buttons horizontally
+            <>
+              <div className='BigBar'>
+              <div className='name'>
+              <a href="/" className="navbar-logo">james Hutchins</a>
+              </div>
+              <ul className="nav-menu">
+                <li>
+                <a href="/" >Home</a>
+                </li>
+                <li>
+                <a href="/project" className="nav-links">Projects</a>
+                </li>
+                
+                <li>
+                  <a href="/StockApi" className="nav-links">API example</a>
+                </li>
+              </ul>
+              </div>
+
+            
+            </>
+          )}
+
+      </nav>
+       
+      
+    );
+  }
 }
+/*
+{/* <nav>
+          
+          {window.innerWidth < 400 ? (
+            <>
+              <button onClick={this.toggleMenu}>Menu</button>
+              {isMenuOpen && (
+                <ul>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link to="/project">Projects</Link>
+                  </li>
+                 
+                </ul>
+              )}
+            </>
+          ) : (
+            // If the screen width is 800px or above, show the buttons horizontally
+            <>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/project">Projects</Link>
+            
+            </>
+          )}
+
+          
+       
+        </nav> */
+
+      

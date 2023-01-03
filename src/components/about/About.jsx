@@ -1,12 +1,24 @@
 import React from 'react'
 import './about.css'
+import CTA from './CTA'
+import Cont from './Cont'
+
+
 const About = () => {
   return (
-    <div>
+    <div className='abtCon'>
+      
       <h1>About me</h1>
-      <a href="">LinkedIn</a>
-      <a href="">GitHub</a>
-    </div>
+
+      
+      <div className='imageHolder'>  
+      <img className="head" src={require("./head.jpeg")} alt={"Carlie Anglemire"}/>
+      </div>
+      
+      <CTA />
+      <Cont/>
+      </div>
+    
   )
 }
 
