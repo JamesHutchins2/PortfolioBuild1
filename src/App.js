@@ -4,7 +4,7 @@ import './index.css'
 import Header from './components/Header/Header'
 import Navbar from './components/navbar/navbar'
 import About from './components/about/About'
-import Contact from './components/contact/Contact'
+
 import Experience from './components/experience/Experience'
 import Footer from './components/Footer/Footer'
 

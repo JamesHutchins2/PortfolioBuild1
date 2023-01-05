@@ -79,39 +79,3 @@ export default class Navbar extends React.Component {
     );
   }
 }
-/*
-{/* <nav>
-          
-          {window.innerWidth < 400 ? (
-            <>
-              <button onClick={this.toggleMenu}>Menu</button>
-              {isMenuOpen && (
-                <ul>
-                  <li>
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact">Contact</Link>
-                  </li>
-                  <li>
-                    <Link to="/project">Projects</Link>
-                  </li>
-                 
-                </ul>
-              )}
-            </>
-          ) : (
-            // If the screen width is 800px or above, show the buttons horizontally
-            <>
-              <Link to="/about">About</Link>
-              <Link to="/contact">Contact</Link>
-              <Link to="/project">Projects</Link>
-            
-            </>
-          )}
-
-          
-       
-        </nav> */
-
-      
