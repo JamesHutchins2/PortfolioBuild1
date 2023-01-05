@@ -24,7 +24,7 @@ const App = (props, state) => {
       <Header/>
       <About/>
       
-      <Contact/>
+      
      
       <Experience/>
       <div className="App">
