@@ -1,7 +1,6 @@
 import React from 'react'
 import './experience.css'
 
-import './experience.css';
 let RD = () => {
     return(
         <div className = "modal">

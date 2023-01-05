@@ -1,6 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
 // Components
 import About from '../about/About'
 import Contact from '../contact/Contact'

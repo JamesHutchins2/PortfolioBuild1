@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer'
 import ProjectMain from './components/Projects/ProjectMain'
 
 import './index.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 const App = (props, state) => {
   
 
