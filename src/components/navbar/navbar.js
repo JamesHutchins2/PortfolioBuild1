@@ -2,9 +2,7 @@ import React from 'react';
 
 import './navbar.css';
 // Components
-import About from '../about/About'
-import Contact from '../contact/Contact'
-import ProjectMain from '../Projects/ProjectMain';
+
 
 
 export default class Navbar extends React.Component {
