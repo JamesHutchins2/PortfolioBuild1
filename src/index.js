@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 console.log(window.location.pathname)
 root.render(
   <React.StrictMode>
-     <Middle/>
+     <App/>
   </React.StrictMode>
   
 );
