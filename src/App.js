@@ -1,11 +1,7 @@
 import React from 'react'
 import './index.css'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Header from './components/Header/Header'
-import Navbar from './components/navbar/navbar'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Footer from './components/Footer/Footer'
+import { Switch, Route } from 'react-router-dom'
+
 import ProjectMain from './components/Projects/ProjectMain'
 import SEC from './components/SEC/SEC'
 import StockApi from './components/StockData/StockApi'
@@ -13,33 +9,18 @@ import Middle from './Middle'
 
 import './index.css'
 
-const App = (props, state) => {
-  
-
-  return (
-    <Router>
+const App = () => {
+  return(
     
-    <div>
-    
-     
       
-    
-      <Routes>
-        <Route path="/" element={<Middle/>}/>
-        <Route path="/project" element={<ProjectMain/>}/>
-        <Route path="/SEC" element={<SEC/>}/>
-        <Route path="/StockApi" element={<StockApi/>}/>
-      </Routes>
+      <Switch>
+        <Route exact path="/" component={Middle}/>
+        <Route exact path="/project/" component={ProjectMain}/>
+        <Route path="/SEC/" component={SEC}/>
+        <Route path="/StockApi/" component={StockApi}/>
+      </Switch>
       
-      
-     
-      
-      
-      <Footer />
-    </div>
-    </Router>
-   
-  )
+    )
 }
 
 export default App

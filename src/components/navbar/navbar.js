@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'
 import './navbar.css';
 // Components
 
@@ -34,16 +34,16 @@ export default class Navbar extends React.Component {
                
 
                 <ul className="nav-menu">
-                  <li>
-                  <a href="/" className="nav-links">Home</a>
-                  </li>
-                  <li>
-                  <a href="/project" className="nav-links">Projects</a>
-                  </li>
-                  
-                  <li>
-                  <a href="/StockApi" className="nav-links">API example</a>
-                  </li>
+                <li>
+                <Link to='/'>Home</Link>
+                </li>
+                <li>
+                <Link to='/project' className="nav-links">Projects</Link>
+                </li>
+                
+                <li>
+                  <Link to='/StockApi' className="nav-links">API example</Link>
+                </li>
                   
                 </ul> </div>
         )}
@@ -57,14 +57,14 @@ export default class Navbar extends React.Component {
               </div>
               <ul className="nav-menu">
                 <li>
-                <a href="/" >Home</a>
+                <Link to='/'>Home</Link>
                 </li>
                 <li>
-                <a href="/project" className="nav-links">Projects</a>
+                <Link to='/project' className="nav-links">Projects</Link>
                 </li>
                 
                 <li>
-                  <a href="/StockApi" className="nav-links">API example</a>
+                  <Link to='/StockApi' className="nav-links">API example</Link>
                 </li>
               </ul>
               </div>
