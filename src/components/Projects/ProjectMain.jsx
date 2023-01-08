@@ -58,7 +58,7 @@ holdings of their company’s securities by filing Forms
             However work will still have to be done to automate notifications and output upon new filings.</h6>
                 
 
-                <Link to="/SEC" className='morebtn'>See More</Link>
+                <Link to='/SEC' className='morebtn'>See More</Link>
             <div className='Expln'>
 
                 </div>
