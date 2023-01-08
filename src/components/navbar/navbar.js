@@ -44,6 +44,9 @@ export default class Navbar extends React.Component {
                 <li>
                   <Link to='/StockApi' className="nav-links">API example</Link>
                 </li>
+                <li>
+                  <Link to='/SEC' className="nav-links">API example</Link>
+                </li>
                   
                 </ul> </div>
         )}

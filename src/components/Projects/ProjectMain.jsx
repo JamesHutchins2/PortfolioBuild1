@@ -3,6 +3,8 @@
 import Navbar from '../navbar/navbar'
 import './project.css'
 import Reddit from './Reddit.jsx'
+import { Link } from 'react-router-dom'
+
  const ProjectMain = () => {
    return (
      <div>
@@ -56,7 +58,7 @@ holdings of their company’s securities by filing Forms
             However work will still have to be done to automate notifications and output upon new filings.</h6>
                 
 
-                <a href="/SEC" className='morebtn'>See More</a>
+                <Link to="/SEC" className='morebtn'>See More</Link>
             <div className='Expln'>
 
                 </div>
