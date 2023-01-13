@@ -19,6 +19,30 @@
     color: #ffffff;
    
 }
+.data{
+    padding: 2em;
+    width : 100%;
+    height : 70%;
+   
+    background-color: #383838;
+    margin: 1.2em;
+}
+.hd{
+    color: #ffffff;
+    font-size: 1.5em;
+    display: inline;
+}
+.btnf{
+    background-color: #ffffff;
+    color: #383838;
+    border: none;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1em;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
 .text{
     font-size: 1em;
     font-family: 'Nanum Gothic', sans-serif;
